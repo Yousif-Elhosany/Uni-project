@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>التذاكر</title>
+
+<style>
+
+/* Navbar */
+.navbar {
+    background: linear-gradient(135deg, #3b0000, #8b0000);
+    padding: 10px;
+    display: flex;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Body */
+body {
+    font-family: Arial;
+    background: #222;
+    color: #fff;
+    margin: 0;
+}
+
+/* الكونتينر */
+.tickets {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+/* الكارت */
+.ticket {
+    width: 250px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* تأثير الهوفر */
+.ticket:hover {
+    transform: translateY(-10px) scale(1.05);
+}
+
+/* Standard */
+.standard {
+    background: #444;
+}
+
+/* Premium */
+.premium {
+    background: linear-gradient(135deg, #007bff, #00c6ff);
+}
+
+/* VIP */
+.vip {
+    background: linear-gradient(135deg, gold, orange);
+    color: #000;
+}
+
+/* السعر */
+.price {
+    font-size: 28px;
+    margin: 15px 0;
+}
+
+/* زر */
+button {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* أزرار */
+.standard button {
+    background: #777;
+    color: #fff;
+}
+
+.premium button {
+    background: #fff;
+    color: #007bff;
+}
+
+.vip button {
+    background: #000;
+    color: gold;
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<div class="navbar">
+  <a href="index.html">الرئيسية</a>
+  <a href="museum.html">تاريخ المتحف</a>
+  <a href="login.html">تسجيل الخروج</a>
+</div>
+
+<!-- Tickets -->
+<div class="tickets">
+
+    <!-- مصريين -->
+    <div class="ticket standard">
+        <h2>للمصريين</h2>
+        <div class="price">200 جنيه</div>
+        <button>احجز الآن</button>
+    </div>
+
+    <!-- مقيمين -->
+    <div class="ticket premium">
+        <h2>أجانب وعرب مقيمين</h2>
+        <div class="price">500 جنيه</div>
+        <button>احجز الآن</button>
+    </div>
+
+    <!-- غير مقيمين -->
+    <div class="ticket vip">
+        <h2>أجانب وعرب غير مقيمين</h2>
+        <div class="price">750 جنيه</div>
+        <button>احجز الآن</button>
+    </div>
+
+</div>
+
+</body>
+</html>

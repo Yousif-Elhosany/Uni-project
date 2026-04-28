@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>تسجيل الدخول</title>
+
+<style>
+body {
+  margin: 0;
+  font-family: Arial;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #d2b48c, #f5deb3);
+}
+
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+}
+
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: brown;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="box">
+  <h2>تسجيل الدخول</h2>
+
+  <input type="text" placeholder="اسم المستخدم">
+  <input type="password" placeholder="كلمة المرور">
+
+  <button onclick="login()">دخول</button>
+</div>
+
+<script>
+function login(){
+  window.location.href = "index.html";
+}
+</script>
+
+</body>
+</html>
