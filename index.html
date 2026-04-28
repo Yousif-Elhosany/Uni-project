@@ -2,69 +2,41 @@
 <html lang="ar" dir="rtl">
 <head>
 <meta charset="UTF-8">
-<title>المتحف المصري الكبير</title>
+<title>تسجيل الدخول</title>
 
 <style>
-
 body {
   margin: 0;
   font-family: Arial;
-  transition: 0.5s;
-}
-
-/* دارك مود */
-.dark {
-  background: #111;
-  color: white;
-}
-
-.dark .card {
-  background: #222;
-}
-
-/* Navbar */
-.navbar {
-  background: brown;
-  padding5px;
-  text-align: center;
-}
-
-.navbar a {
-  color: #ffffff;
-  margin: 100px;
-  text-decoration: none;
-  font-weight: border-top-color;
-}
-
-/* زر الوضع */
-.toggle {
-  position: fixed;
-  top: 10px;
-  left: 10px;
-  background: black;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
-
-/* كروت */
-.container {
+  height: 100vh;
   display: flex;
-  flex-wrap: wrap;
   justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg, #d2b48c, #f5deb3);
 }
 
-.card {
-  background:#782b1c;
-  margin: 50px;
-  padding: 100px;
-  border-radius: 50px;
-  width: 500px;
-  transition: 0.3s;
+.box {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  width: 300px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
 }
 
-.card:hover {
-  transform: scale(1.05);
+input {
+  width: 90%;
+  padding: 10px;
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: brown;
+  color: white;
+  border: none;
+  cursor: pointer;
 }
 
 </style>
@@ -72,25 +44,18 @@ body {
 
 <body>
 
-<div class="toggle" onclick="toggleMode()">🌙</div>
+<div class="box">
+  <h2>تسجيل الدخول</h2>
 
-<div class="navbar">
-  <a href="index.html"><h2>الرئيسية</h2></a>
-  <a href="Ticket.html"><h2>التذاكر</h2></a>
-</div>
+  <input type="text" placeholder="اسم المستخدم">
+  <input type="password" placeholder="كلمة المرور">
 
-<div class="container">
-
-<div class="card">
-<a href="museum.html">
-<h1>تاريخ المتحف</h1></a>
- <img src="sss.jpg">
-</div>
+  <button onclick="login()">دخول</button>
 </div>
 
 <script>
-function toggleMode(){
-  document.body.classList.toggle("dark");
+function login(){
+  window.location.href = "page.html";
 }
 </script>
 
